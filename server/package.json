@@ -1,0 +1,12 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ftp-srv ftp://127.0.0.1:21 -c users.json"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "ftp-srv": "^4.1.0"
+  }
+}

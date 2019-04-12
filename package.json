@@ -1,0 +1,8 @@
+{
+  "name": "proj-swagftp",
+  "version": "1.0.0",
+  "main": "./server/index.js",
+  "repository": "https://github.com/PMHStudio/SWAGFTP.git",
+  "author": "PMHStudio <pmhstudio.pmh@gmail.com>",
+  "license": "MIT"
+}
