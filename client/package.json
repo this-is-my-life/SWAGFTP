@@ -7,7 +7,9 @@
     "start": "electron ."
   },
   "dependencies": {
-    "ftp-deploy": "^2.3.3"
+    "ftp": "^0.3.10",
+    "ftp-deploy": "^2.3.3",
+    "superagent": "^5.0.2"
   },
   "devDependencies": {
     "electron": "^4.1.4"

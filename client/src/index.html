@@ -12,10 +12,26 @@
     <link rel="stylesheet" href="./main.css">
   </head>
   <body>
-      <div class="container-fluid text-center">
-        <input type="text" placeholder="SWAG FTP 아이디" id="inputID" class="form-control">
-        <input type="text" placeholder="비밀번호" id="inputPW" class="form-control">
-        <button class="btn btn-primary">연결</button> <!-- 나도 자야징 : https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7 , NzY3Mjk0Mzc4NDU4NDQ0OQ==.pLeUkz.3FLxscSdLyB0tRaFDOcQFuzxiKn-->
+      <div class="container">
+        <div class="jumbotron rounded-bottom loginForm" id="loginForm">
+            <div class="form-group">
+              <label for="inputID">SWAG FTP 아이디</label>
+              <input type="text" placeholder="여기를 눌러 입력하세요" id="inputID" class="form-control">
+              <small id="emailHelp" class="form-text is-valid text-muted" required>새로운 아이디일 경우 계정을 새로 만듭니다</small>
+            </div>
+            <div class="form-group">
+              <label for="inputPW">비밀번호</label>
+              <input type="password" placeholder="****" id="inputPW" class="form-control">
+              <small id="pwHelp" class="form-text text-muted">비밀번호가 없는 계정일 경우 비밀번호를 새로 만듭니다</small>
+            </div>
+            <div class="form-group">
+              <label for="inputCo">가입코드</label>
+              <input type="text" placeholder="ex) EC105S" id="inputCo" class="form-control">
+              <small id="coHelp" class="form-text text-muted">FTP 가입신청할때 받은 코드입니다 (맨 처음 가입할때만 입력하면 됩니다)</small>
+            </div>
+            <button class="btn btn-primary" onclick="connect()">FTP 연결</button>
+      </div>
+         <!-- 나도 자야징 : https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7 , NzY3Mjk0Mzc4NDU4NDQ0OQ==.pLeUkz.3FLxscSdLyB0tRaFDOcQFuzxiKn-->
       </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
