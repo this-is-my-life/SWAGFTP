@@ -8,7 +8,10 @@ function connect () {
   let pw = document.getElementById('inputPW')
   let co = document.getElementById('inputCo')
   let form = document.getElementById('loginForm')
-  superagent.get('https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7/latest').then((response) => {
+  superagent.get('https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7/latest')
+  .set('Content-Type', 'application/json')
+  .set('secret-key', '$2a$10$xx2wiAKb3asg8WE9l04UDOG4c2rsQcmTqbg29HMJkQ98fs92jbmlu')
+  .then((response) => {
     if (!id.value) {
       id.style.backgroundColor = 'lightpink'
     }
@@ -33,6 +36,7 @@ function connect () {
       form.style.display = 'none'
       superagent.put('https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7')
         .set('Content-Type', 'application/json')
+        .set('secret-key', '$2a$10$xx2wiAKb3asg8WE9l04UDOG4c2rsQcmTqbg29HMJkQ98fs92jbmlu')
         .send(response.body)
         .catch((err) => {
           alert('Err502: ' + err)
@@ -45,13 +49,14 @@ function connect () {
 }
 
 function preConnnect (id) {
-  preConnection.on('ready', () => {
-    preConnection.mkdir('/' + id, (err) => {
-      alert('Err502: ' + err)
-    })
-    preConnection.end()
+  preConnection.list('/StudentProject/' + id, (err) => {
+    if (err) {
+      preConnection.mkdir('/StudentProject/' + id, (err) => {
+        if (err) { alert('Err502: ' + err) }
+        preConnection.end()
+      })
+    }
   })
-  ftpSync(id)
 }
 
 preConnection.connect({
