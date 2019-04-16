@@ -55,10 +55,10 @@ function preConnnect (id) {
 }
 
 preConnection.connect({
-  host: swagftp.iptime.org,
+  host: 'swagftp.iptime.org',
   port: 21,
   secure: false,
-  user: 'Students',
-  password: 'ㅁㄹ'
+  user: 'Student',
+  password: 'swag',
 })
 
