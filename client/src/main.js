@@ -8,9 +8,8 @@ function connect () {
   let pw = document.getElementById('inputPW')
   let co = document.getElementById('inputCo')
   let form = document.getElementById('loginForm')
-  superagent.get('https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7/latest')
+  superagent.get('https://api.myjson.com/bins/9r7vs')
   .set('Content-Type', 'application/json')
-  .set('secret-key', '$2a$10$xx2wiAKb3asg8WE9l04UDOG4c2rsQcmTqbg29HMJkQ98fs92jbmlu')
   .then((response) => {
     if (!id.value) {
       id.style.backgroundColor = 'lightpink'
@@ -34,9 +33,8 @@ function connect () {
     if (response.body.users[id.value].passwd === pw.value) {
       pw.style.backgroundColor = 'lightgreen'
       form.style.display = 'none'
-      superagent.put('https://api.jsonbin.io/b/5cb0a18526ddc84cea3d62e7')
+      superagent.put('https://api.myjson.com/bins/9r7vs')
         .set('Content-Type', 'application/json')
-        .set('secret-key', '$2a$10$xx2wiAKb3asg8WE9l04UDOG4c2rsQcmTqbg29HMJkQ98fs92jbmlu')
         .send(response.body)
         .catch((err) => {
           alert('Err502: ' + err)
