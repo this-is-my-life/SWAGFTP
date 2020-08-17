@@ -105,15 +105,15 @@ find-up@^2.1.0:
   dependencies:
     locate-path "^2.0.0"
 
-ftp-srv@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/ftp-srv/-/ftp-srv-4.1.0.tgz#5c6f90e82bf221b872a2abe4af3d00aa2719fb05"
-  integrity sha512-FS/DNHQ4Dh1un6rF5Ko/g6NRmaQ+0OpVPf84L7d7zVBkmT8I53eBmtw8W9fFgC3SO9K2KMCUpV7GPvV+/OfbLA==
+ftp-srv@^4.3.4:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/ftp-srv/-/ftp-srv-4.3.4.tgz#05bf76fd82e0ce781624d23d46f80746c95fe06e"
+  integrity sha512-q4tPM4n22fgRi0Q4XUDXH3Bqg5+H2xPmBaz5PyipTfAAFLGepY/XIahf4+Vy047LwcjtNerAU9dFjl+fAEbYzA==
   dependencies:
     bluebird "^3.5.1"
     bunyan "^1.8.12"
     ip "^1.1.5"
-    lodash "^4.17.10"
+    lodash "^4.17.15"
     moment "^2.22.1"
     uuid "^3.2.1"
     yargs "^11.0.0"
@@ -199,10 +199,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
-lodash@^4.17.10:
-  version "4.17.14"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.14.tgz#9ce487ae66c96254fe20b599f21b6816028078ba"
-  integrity sha512-mmKYbW3GLuJeX+iGP+Y7Gp1AiGHGbXHCOh/jZmrawMmsE7MS4znI3RL2FsjbqOyMayHInjOeykW7PEajUk1/xw==
+lodash@^4.17.15:
+  version "4.17.20"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
+  integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
 
 lru-cache@^4.0.1:
   version "4.1.5"
