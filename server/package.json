@@ -7,6 +7,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "ftp-srv": "^4.1.0"
+    "ftp-srv": "^4.4.0"
   }
 }
